@@ -1,0 +1,85 @@
+{
+  "name": "CSS-Spark",
+  "description": "Quick CSS-based sparkline",
+  "author": "A Gertenbach",
+  "library": "adam",
+  "meta": {
+    "type": "chart"
+  },
+  "properties": {
+    "measures": {
+      "min": 1,
+      "max": 1
+    },
+    "dimensions": {
+      "max": 1,
+      "min": 1
+    },
+    "sections": [
+      {
+        "type": "header",
+        "order": 0,
+        "parent": "qw-pe-dropzone1-0",
+        "ref": "header1",
+        "label": "Settings"
+      }
+    ],
+    "settings": [
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "3",
+        "order": 0,
+        "parent": "header1",
+        "ref": "sparkwidth",
+        "label": "Spark Width (px)"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "0",
+        "order": 1,
+        "parent": "header1",
+        "ref": "min",
+        "label": "Min"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "10",
+        "order": 2,
+        "parent": "header1",
+        "ref": "max",
+        "label": "Max"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "#FF0000",
+        "order": 5,
+        "parent": "header1",
+        "ref": "negColor",
+        "label": "Negative Color"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "0",
+        "order": 3,
+        "parent": "header1",
+        "ref": "Threshold",
+        "label": "Color Threshold"
+      },
+      {
+        "type": "string",
+        "expression": "optional",
+        "defaultValue": "#AAA",
+        "order": 4,
+        "parent": "header1",
+        "ref": "posColor",
+        "label": "Positive Color"
+      }
+    ],
+    "sorting": true
+  }
+}
