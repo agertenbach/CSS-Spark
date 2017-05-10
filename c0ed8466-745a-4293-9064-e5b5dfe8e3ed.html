@@ -54,10 +54,8 @@
 										 row.measures[0].qNum < 0 &amp;&amp; settings.min < 0 &amp;&amp; settings.max < 0 ? 'top: 0%' :
 										 'bottom: 0px'}}
 										 ;
-										 {{row.measures[0].qNum >= 0 &amp;&amp; settings.min >= 0 &amp;&amp; settings.max >= 0 ? 'height:' + (row.measures[0].qNum / (settings.max - settings.min) * 100) + '%' : 
-										 row.measures[0].qNum >= 0 &amp;&amp; settings.min < 0 &amp;&amp; settings.max >= 0 ? 'height:' + (row.measures[0].qNum / (settings.max - settings.min) * 100) + '%' :
-										 row.measures[0].qNum < 0 &amp;&amp; settings.min < 0 &amp;&amp; settings.max >= 0 ? 'height:' + (row.measures[0].qNum / (settings.max - settings.min) * -100) + '%'  :
-										 row.measures[0].qNum < 0 &amp;&amp; settings.min < 0 &amp;&amp; settings.max < 0 ? 'height:' + (row.measures[0].qNum / (settings.max - settings.min) * -100) + '%' :
+										 {{row.measures[0].qNum >= 0 ? 'height:' + (row.measures[0].qNum / (settings.max - settings.min) * 100) + '%' : 
+										 row.measures[0].qNum < 0  ? 'height:' + (row.measures[0].qNum / (settings.max - settings.min) * -100) + '%'  :
 										 'height: 0px'}}
 										 ;
 										 background: {{row.measures[0].qNum >= settings.Threshold ? settings.posColor : settings.negColor}}
